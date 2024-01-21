@@ -1,15 +1,12 @@
-# React Native Figma Renderer
+# Tobams Group React Native Figma Renderer
 
-## Overview
-
-Welcome to the React Native Figma Renderer! This is a powerful mobile app development tool that allows you to seamlessly integrate your designs from Figma into your React Native projects. Whether you're a designer looking to showcase your work or a developer aiming for pixel-perfect implementation, this tool has got you covered.
+Welcome to the Tobams Group React Native Figma Renderer! This mobile app is designed to render a Figma design provided by Tobams Group. The app allows you to visualize and interact with the Figma design, with a specific focus on the "menu" tab for content display.
 
 ## Features
 
-- **Figma Integration:** Easily import your Figma designs into the React Native app.
-- **Pixel-Perfect Rendering:** Ensure that your designs are faithfully represented on mobile devices.
-- **Interactive Prototyping:** Test out interactive elements and animations directly within the app.
-- **Real-time Sync:** Keep your app's design in sync with Figma effortlessly.
+- **Figma Design Integration:** Render and interact with the Tobams Group Figma design.
+- **Styling Objects:** Explore the app's styling in the `assets/styles` folder.
+- **Content Display:** Click on the "menu" tab to view the content as the home and account routes are under construction.
 
 ## Getting Started
 
@@ -17,14 +14,13 @@ Welcome to the React Native Figma Renderer! This is a powerful mobile app develo
 
 - [Node.js](https://nodejs.org/) installed on your machine
 - [React Native CLI](https://reactnative.dev/docs/environment-setup) set up
-- Figma account with your design files
 
 ### Installation
 
-1. Clone the repository:
+1. Clone the repository provided by Tobams Group:
 
    ```bash
-   git clone https://github.com/yourusername/react-native-figma-renderer.git
+   git clone https://github.com/tobamsgroup/react-native-figma-renderer.git
    ```
 
 2. Navigate to the project directory:
@@ -38,15 +34,6 @@ Welcome to the React Native Figma Renderer! This is a powerful mobile app develo
    ```bash
    npm install
    ```
-
-4. Configure Figma API credentials:
-
-   - Obtain your Figma API key from the [Figma Developer Console](https://www.figma.com/developers/docs#authentication).
-   - Create a `.env` file in the project root and add your Figma API key:
-
-     ```env
-     FIGMA_API_KEY=your_figma_api_key_here
-     ```
 
 ### Usage
 
@@ -64,28 +51,21 @@ Welcome to the React Native Figma Renderer! This is a powerful mobile app develo
    npx react-native run-ios
    ```
 
-3. Open the app and provide the Figma file URL for rendering.
+3. Open the app and navigate to the "menu" tab to explore the Figma design content.
 
-## Configuration
+## Project Structure
 
-Update the `config.js` file to customize the behavior of the Figma Renderer:
+- `assets/styles`: Contains styling objects for the app.
+- `src`: Source code files for the React Native app.
+- `...` (Other project files)
 
-- `figmaFileUrl`: The URL of your Figma file.
-- `renderOptions`: Additional options for rendering (e.g., device type, background color).
+## Known Issues
 
-```javascript
-module.exports = {
-  figmaFileUrl: "https://www.figma.com/file/your-figma-file-id/Your-Design",
-  renderOptions: {
-    deviceType: "iPhoneX",
-    backgroundColor: "#ffffff",
-  },
-};
-```
+- The home and account routes are currently under construction and not available in this release due to time constraints.
 
 ## Contributing
 
-We welcome contributions! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
+We welcome contributions! If you encounter any issues or have suggestions for improvement, please open an issue or submit a pull request.
 
 ## License
 
@@ -93,7 +73,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- Thanks to the Figma team for providing a fantastic design collaboration platform.
-- Inspired by [Framer](https://www.framer.com/) and [React Native](https://reactnative.dev/).
+- Special thanks to Tobams Group for providing the Figma design for this project.
+- Inspired by the power of React Native and Figma collaboration.
 
-Happy coding! 🚀
+Feel free to explore, visualize, and provide feedback. Happy coding! 🚀

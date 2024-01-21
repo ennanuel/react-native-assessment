@@ -6,7 +6,7 @@ import { styles } from "../../assets/styles/cart"
 const CartItem = ({ item, increaseQuantity, decreaseQuantity, removeItemFromCart }) => {
     return (
         <View style={styles.itemContainer} key={item.id}>
-            <Image style={styles.image} />
+            <Image style={styles.image} source={{ url: item.image }} />
             <View style={styles.detailsContainer}>
                 <Text style={[styles.text1, styles.textBold]}>{item.name}</Text>
                 <Text style={[styles.text1, styles.textBold, styles.price]}>$ {item.price}</Text>

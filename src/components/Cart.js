@@ -27,7 +27,7 @@ const Cart = () => {
                         ))
                     }
                 </View>
-                <View>
+                <View style={styles.bottom}>
                     <View style={styles.totalContainer}>
                         <Text style={styles.text}><Text style={styles.textBold}>Total </Text>({cart.length} {cart.length === 1 ? 'item' : 'items'})</Text>
                         <Text style={[styles.text, styles.textBold]}>$ {total}</Text>

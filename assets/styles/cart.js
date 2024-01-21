@@ -39,6 +39,7 @@ const styles = StyleSheet.create({
         color: "red"
     },
     actionButtonsContainer: {
+        flex: 1,
         justifyContent: "space-between",
         gap: 10,
         alignItems: "center"
@@ -50,6 +51,10 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
         backgroundColor: "white"
+    },
+    bottom: {
+        flex: 1,
+        justifyContent: "flex-end"
     },
     totalContainer: {
         flexDirection: "row",

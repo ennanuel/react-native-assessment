@@ -1,5 +1,6 @@
-import { View, Text, TouchableOpacity, StyleSheet, Ionicons } from '"react-native';
+import { View, Text, TouchableOpacity, Ionicons } from '"react-native';
 import React from 'react';
+import { styles } from "../../assets/SingleItem";
 
 const MoreDetails = () => {
     return (

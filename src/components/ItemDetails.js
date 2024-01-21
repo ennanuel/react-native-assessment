@@ -1,5 +1,5 @@
 import { View, Text, TouchableOpacity, Image } from "react-native";
-import { stylse } from "../../assets/SingleItem";
+import { styles } from "../../assets/SingleItem";
 
 const ItemDetails = ({ image, name, price }) => {
     return (
@@ -25,9 +25,5 @@ const ItemDetails = ({ image, name, price }) => {
         </>
     )
 };
-
-const styles = StyleSheet.create({
-
-})
 
 export default ItemDetails

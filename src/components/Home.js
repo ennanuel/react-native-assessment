@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { View } from "react-native";
 
-const Home = () => {
+const Home = ({ navigation }) => {
+    useEffect(() => {
+        navigation.navigate("Items")
+    })
+
     return (
         <View></View>
     )

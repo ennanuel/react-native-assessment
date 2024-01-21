@@ -1,6 +1,7 @@
 import { View, Text, TouchableOpacity, Feather, StyleSheet } from "react-native";
 import React, { useContext, useState, useEffect } from "react";
 import { CartContext } from "../../cartContext";
+import { styles } from "../../assets/styles";
 
 const CartActions = ({ increaseQuantity, itemQuantity, cartItem, itemId, totalQuantity }) => {
     const [quantity, setQuantity] = useState(1);

@@ -4,7 +4,7 @@ import { View, Image, Text, TouchableOpacity } from "react-native";
 import { CartContext } from "../../cartContext";
 import { styles } from "../../assets/styles/item.js";
 
-const Item = ({ id, name, price, images, navigation }) => {
+const Item = ({ id, name, price, image, navigation }) => {
     const { cart, addItemToCart, removeItemFromCart } = useContext(CartContext);
     const isInCart = useMemo(() => cart.map(item => item.id).includes(id), [cart]);
 
@@ -18,9 +18,9 @@ const Item = ({ id, name, price, images, navigation }) => {
     return (
         <View style={styles.container}>
             <TouchableOpacity onPress={navigateToItem} style={styles.details}>
-                <Image source={require("../../assets/food.jpg")} style={styles.image} />
+                <Image source={{ url: image }} style={styles.image} />
                 <View style={styles.nameAndPriceContainer}>
-                    <Text style={styles.nameAndPriceText}>{name}</Text>
+                    <Text style={styles.nameAndPriceText}>{name.length > 11? name.substr(0, 11) + '...' : name}</Text>
                     <Text style={[styles.price, styles.nameAndPriceText]}>$ {price}</Text>
                 </View>
             </TouchableOpacity>

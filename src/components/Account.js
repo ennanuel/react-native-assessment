@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { View } from "react-native";
 
-const Account = () => {
+const Account = ({ navigation }) => {
     useEffect(() => {
         navigation.navigate("Items")
     });

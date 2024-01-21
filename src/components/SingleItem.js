@@ -3,10 +3,10 @@ import React, { useContext, useMemo } from "react";
 import { TouchableOpacity, ScrollView, SafeAreaView } from "react-native";
 import { ITEMS } from "../../constant";
 import { CartContext } from "../../cartContext";
-import MoreDetails from "./MoreDetials";
+import MoreDetails from "./MoreDetails";
 import CartActions from "./CartActions";
 import ItemDetails from "./ItemDetails";
-import { styles } from "../../assets/styles/SingleItem";
+import { styles } from "../../assets/styles/singleItem";
 
 const SingleItem = ({ navigation, route }) => {
     const { itemId } = route.params;

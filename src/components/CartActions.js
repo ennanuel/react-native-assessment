@@ -1,9 +1,10 @@
-import { View, Text, TouchableOpacity, Feather, StyleSheet } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
+import { Feather } from "@expo/vector-icons";
 import React, { useContext, useState, useEffect } from "react";
 import { CartContext } from "../../cartContext";
-import { styles } from "../../assets/styles";
+import { styles } from "../../assets/styles/singleItem";
 
-const CartActions = ({ increaseQuantity, itemQuantity, cartItem, itemId, totalQuantity }) => {
+const CartActions = ({ itemQuantity, cartItem, itemId, totalQuantity }) => {
     const [quantity, setQuantity] = useState(1);
     const { increaseItemQuantity, decreaseItemQuantity, addItemToCart, removeItemFromCart } = useContext(CartContext);
 
@@ -19,8 +20,8 @@ const CartActions = ({ increaseQuantity, itemQuantity, cartItem, itemId, totalQu
 
     useEffect(() => {
         if (!cartItem) return;
-        setQuantity(itemQuantity);
-    }, [itemId, itemQuantity])
+        setQuantity(cartItem.quantity);
+    }, [itemId, cartItem, itemQuantity])
 
     return (
         

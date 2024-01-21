@@ -1,12 +1,12 @@
 import { View, Text, TouchableOpacity, Image } from "react-native";
-import { styles } from "../../assets/SingleItem";
+import { styles } from "../../assets/styles/singleItem";
 
 const ItemDetails = ({ image, name, price }) => {
     return (
         <>
             <View>
                 <View style={styles.imageContainer}>
-                    <Image source={require(image)} style={styles.image} />
+                    <Image source={{ url: image}} style={styles.image} />
                 </View>
                 <View style={styles.imageButtonsContainer}>
                     <TouchableOpacity style={styles.imageButton} />

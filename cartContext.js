@@ -32,9 +32,8 @@ const CartContextProvider = ({ children }) => {
         if (!itemIndex) return setError('Item not found');
         const cartItem = cart[itemIndex];
         const newQuantity = cartItem.quantity + quantity;
-
+        
         if (cartItem.totalQuantity < newQuantity) return setError("Item quantity is too much");
-        console.log(quantity, cartItem.totalQuantity);
         setCart(cart.map(item => item.id === itemId ? { ...cartItem, quantity: newQuantity } : item));
     };
 

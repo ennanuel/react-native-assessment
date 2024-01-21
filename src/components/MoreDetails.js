@@ -1,10 +1,10 @@
-import { View, Text, TouchableOpacity, Ionicons } from '"react-native';
+import { View, Text, TouchableOpacity } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
 import React from 'react';
-import { styles } from "../../assets/SingleItem";
+import { styles } from "../../assets/styles/singleItem";
 
 const MoreDetails = () => {
     return (
-        
         <View style={styles.moreInfoContainer}>
             <View>
                 <TouchableOpacity style={styles.moreInfo}>

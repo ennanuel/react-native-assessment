@@ -17,7 +17,14 @@ const Cart = () => {
             <ScrollView style={styles.container}>
                 <View style={styles.itemsContainer}>
                     {
-                        cart.map((item) => <CartItem item={item} increaseQuantity={increaseQuantity} decreaseQuantity={decreaseQuantity} removeItemFromCart={removeItemFromCart} />)
+                        cart.map((item) => (
+                            <CartItem
+                                item={item}
+                                increaseQuantity={increaseQuantity}
+                                decreaseQuantity={decreaseQuantity}
+                                removeItemFromCart={removeItemFromCart}
+                            />
+                        ))
                     }
                 </View>
                 <View>

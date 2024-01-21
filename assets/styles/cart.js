@@ -9,7 +9,6 @@ const styles = StyleSheet.create({
     itemsContainer: {
         flex: 1,
         gap: 15,
-        minHeight: '60%'
     },
     itemContainer: {
         flexDirection: "row",

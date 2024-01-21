@@ -17,19 +17,14 @@ Welcome to the Tobams Group React Native Figma Renderer! This mobile app is desi
 
 ### Installation
 
-1. Clone the repository provided by Tobams Group:
+1. Clone this repository:
 
    ```bash
-   git clone https://github.com/tobamsgroup/react-native-figma-renderer.git
+   git clone https://github.com/ennanuel/react-native-assessment.git
+
    ```
 
-2. Navigate to the project directory:
-
-   ```bash
-   cd react-native-figma-renderer
-   ```
-
-3. Install dependencies:
+2. Install dependencies:
 
    ```bash
    npm install
@@ -40,7 +35,7 @@ Welcome to the Tobams Group React Native Figma Renderer! This mobile app is desi
 1. Run the Metro server:
 
    ```bash
-   npx react-native start
+   npm start
    ```
 
 2. Run the app on a connected emulator or device:
@@ -65,11 +60,7 @@ Welcome to the Tobams Group React Native Figma Renderer! This mobile app is desi
 
 ## Contributing
 
-We welcome contributions! If you encounter any issues or have suggestions for improvement, please open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Contributions are welcome! If you encounter any issues or have suggestions for improvement, please open an issue or submit a pull request.
 
 ## Acknowledgments
 

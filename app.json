@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "reactNativeApp",
-    "slug": "reactNativeApp",
+    "name": "Delicio",
+    "slug": "delicio",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,16 +15,30 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ennanuel.delicio"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.ennanuel.delicio"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "82d5f1e7-9a14-4a94-8a16-df9adcc5a71b"
+      }
+    },
+    "owner": "ennanuel",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/82d5f1e7-9a14-4a94-8a16-df9adcc5a71b"
     }
   }
 }
